@@ -65,13 +65,17 @@
 <body>
 	<div class="container-fluid p-0 m-0 bg-dark" style="height: 100%; position: absolute;">
 		<div class="row mx-auto my-auto p-0 m-0" style="height: 100%;">
-			<div id="projectCarousel" class="carousel slide p-0 m-0" data-bs-ride="carousel" style="height: 100%;">
+			<div id="projectCarousel" class="carousel slide p-0 m-0" data-bs-ride="false" style="height: 100%;">
 				<div class="carousel-inner" role="listbox" style="height: 100%;">
 					<div class="carousel-item active" style="height: 100%;">
 						<div class="col d-flex ">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
 								<div class="card-img">
-									<img src="images/Logo.png" class="img-fluid">
+									<picture>
+										<source srcset="images/Logo.avif" type="image/avif">
+										<source srcset="images/Logo.webp" type="image/webp">
+										<img src="images/Logo.png" class="img-fluid">
+									</picture>
 								</div>
 								<div class="card-img-overlay">Charlie Smith</div>
 							</div>
@@ -80,7 +84,7 @@
 					<div class="carousel-item h-100">
 						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/ExperiarSoC_GDS.png'); background-position: center; background-size: auto 110%; background-repeat: no-repeat;">
+								style="background-image: url('images/ExperiarSoC_GDS_smol.png'); background-position: center; background-size: auto 110%; background-repeat: no-repeat;">
 								<div class="card-img w-90 h-10" style="color: #222;">
 								</div>
 								<div class="card-img-overlay">Experiar SoC</div>
@@ -90,7 +94,7 @@
 					<div class="carousel-item h-100">
 						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/Experiar.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
+								style="background-image: url('images/Experiar.avif'), url('images/Experiar.webp'), url('images/Experiar.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
 								<div class="card-img-overlay">Experiar</div>
 							</div>
 						</div>
@@ -98,7 +102,7 @@
 					<div class="carousel-item h-100">
 						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/Computer_MK2.jpg'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
+								style="background-image: url('images/Computer_MK2.avif'), url('images/Computer_MK2.webp'), url('images/Computer_MK2.jpg'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
 								<div class="card-img-overlay">16-bit Computer</div>
 							</div>
 						</div>
@@ -106,7 +110,7 @@
 					<div class="carousel-item h-100">
 						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/Naveris.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
+								style="background-image: url('images/Naveris.avif'), url('images/Naveris.webp'), url('images/Naveris.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
 								<div class="card-img-overlay">Naveris</div>
 							</div>
 						</div>
@@ -114,7 +118,7 @@
 					<div class="carousel-item h-100">
 						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/AoA.jpg'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
+								style="background-image: url('images/AoA.avif'), url('images/AoA.webp'), url('images/AoA.jpg'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
 								<div class="card-img-overlay">Bluetooth AoA</div>
 							</div>
 						</div>
