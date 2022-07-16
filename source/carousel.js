@@ -17,5 +17,8 @@ items.forEach((el) => {
 	}
 })
 
-// onmouseover="itemHover(1)" onmouseleave="itemReset(1)" onmousedown="itemClick(1)"
-
+window.onwheel = function (e) {
+	const carousel = new bootstrap.Carousel('#projectCarousel')
+	if (e.wheelDelta / 120 > 0) carousel.prev();
+	else carousel.next();
+}
