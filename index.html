@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 	<style type="text/css">
 		body {
 			background-color: #222;
@@ -21,7 +22,7 @@
 
 		a:link,
 		a:visited {
-			color: #38488f;
+			color: #FFF;
 			text-decoration: none;
 		}
 
@@ -68,7 +69,7 @@
 			<div id="projectCarousel" class="carousel slide p-0 m-0" data-bs-ride="false" style="height: 100%;">
 				<div class="carousel-inner" role="listbox" style="height: 100%;">
 					<div class="carousel-item active" style="height: 100%;">
-						<div class="col d-flex ">
+						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
 								<div class="card-img">
 									<picture>
@@ -77,59 +78,154 @@
 										<img src="images/Logo.png" class="img-fluid">
 									</picture>
 								</div>
-								<div class="card-img-overlay">Charlie Smith</div>
+								<div style="margin-top: 100px; margin-left: 5%; width:90%;">
+									<h3 class="card-title">Charlie Smith</h3>
+									<p class="card-text">Working towards PhD in electronics and nano-fabrication. Spending my free time on random
+										projects
+										with electronics and programming</p>
+									<a type="button" class="btn btn-dark" href="https://twitter.com/Wevel50000" style="width: 35%;">Twitter</a>
+									<a type="button" class="btn btn-dark" href="https://github.com/Wevel" style="width: 35%;">Github</a>
 							</div>
-						</div>
+							</div>
+							</div>
 					</div>
-					<div class="carousel-item h-100">
+					<div class="carousel-item" style="height: 100%;">
 						<div class="col d-flex">
-							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/ExperiarSoC_GDS_smol.png'); background-position: center; background-size: auto 110%; background-repeat: no-repeat;">
-								<div class="card-img w-90 h-10" style="color: #222;">
+							<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
+								<div class="project_bg" style="height: 100%;">
+									<img src="images/ExperiarSoC_GDS_smol.png" class="img-fluid"
+										style="margin-top: -10%; height: 110%; object-fit: cover;">
+									<div class="project_overlay">
+										<div style="margin-top: 100px; margin-left: 5%; width:90%;">
+											<h3 class="card-title">Experiar SoC</h3>
+											<h5>Ongoing</h5>
+											<p class="card-text">Designing a system on a chip (SoC) for fabrication through the efabless MPW-6 free
+												shuttle using the Skywater 130nm PDK. This features dual custom designed RISC-V cores with VGA,
+												UART, SPI, and PWM peripherals. This project looks focuses on learning asic design, along with what
+												goes into designing a SoC.</p>
+											<p class="card-text">The design has been completed and was selected for fabrication, which should be
+												completed late 2022.
+											</p>
+											<a type="button" class="btn btn-dark" href="https://github.com/Wevel/ExperiarSoC"
+												style="width: 25%;">Github</a>
+										</div>
+									</div>
+									</div>
+									</div>
 								</div>
-								<div class="card-img-overlay">Experiar SoC</div>
+								</div>
+								<div class="carousel-item" style="height: 100%;">
+									<div class="col d-flex">
+									<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
+										<div class="project_bg" style="height: 100%;">
+											<picture>
+												<source srcset="images/Experiar.avif" type="image/avif">
+												<source srcset="images/Experiar.webp" type="image/webp">
+												<img src="images/Experiar.png" class="img-fluid" style="margin-top: -10%; height: 110%; object-fit: cover;">
+											</picture>
+											<div class="project_overlay">
+												<div style="margin-top: 100px; margin-left: 5%; width:90%;">
+													<h3 class="card-title">Experiar</h3>
+													<h5>Ongoing</h5>
+													<p class="card-text">Designing and building a RISC-V cpu using CMOS logic ICs. The hardware will consist
+														of stacked PCB layers containing functional blocks of the cpu. This looks into
+														designing, simulating, building, and testing a cpu that follows the RISC-V instruction set
+														architecture.</p>
+													<p class="card-text">An initial system design has been completed, along with hardware design for the ALU
+														and layer emulation. However, assembly and testing of these is incomplete. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+									</div>
+									<div class="carousel-item" style="height: 100%;">
+										<div class="col d-flex">
+											<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
+												<div class="project_bg" style="height: 100%;">
+													<picture>
+														<source srcset="images/Computer_MK2.avif" type="image/avif">
+														<source srcset="images/Computer_MK2.webp" type="image/webp">
+														<img src="images/Computer_MK2.jpg" class="img-fluid"
+															style="margin-top: -10%; height: 110%; object-fit: cover;">
+													</picture>
+													<div class="project_overlay">
+														<div style="margin-top: 100px; margin-left: 5%; width:90%;">
+															<h3 class="card-title">16-bit Computer</h3>
+															<h5>Completed</h5>
+															<p class="card-text">This project aimed at designing and building a basic 16-bit computer with a custom
+																instruction set. Hardware uses TTL logic similar to the 8-bit <a href="https://eater.net/8bit">Ben
+																	Eater</a> design. Additionally, a simple compiler was created allowing programming from C like
+																code.</p>
+															<p class="card-text">While some features of this where not completed, the cpu was able to function at a
+																basic level.</p>
+															<a type="button" class="btn btn-dark" href="https://hackaday.io/project/174192-simple-16-bit-computer"
+																style="width: 25%;">About</a>
+														</div>
+													</div>
+												</div>
 							</div>
-						</div>
+							</div>
 					</div>
-					<div class="carousel-item h-100">
+					<div class="carousel-item" style="height: 100%;">
 						<div class="col d-flex">
-							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/Experiar.avif'), url('images/Experiar.webp'), url('images/Experiar.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
-								<div class="card-img-overlay">Experiar</div>
+							<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
+								<div class="project_bg" style="height: 100%;">
+									<picture>
+										<source srcset="images/Naveris.avif" type="image/avif">
+										<source srcset="images/Naveris.webp" type="image/webp">
+										<img src="images/Naveris.png" class="img-fluid" style="margin-top: -10%; height: 110%; object-fit: cover;">
+									</picture>
+									<div class="project_overlay">
+										<div style="margin-top: 100px; margin-left: 5%; width:90%; ">
+											<h3 class="card-title">Naveris</h3>
+											<h5>Ongoing</h5>
+											<p class="card-text">Designing a self flying quadcopter. This predominantly looks at the design of the
+												flight computer and flight software, as well as the use of STM32 microprocessors. Further work could
+												also include a custom motor driver, and cameras and LIDAR sensors for proximity detection.</p>
+											<p class="card-text">The flight computer has been designed and mostly build, with flight software still
+												to be completed. Currently the chip shortage means that the sensors are unavailable.</p>
+											<a type="button" class="btn btn-dark" href="https://hackaday.io/project/180052-naveris"
+												style="width: 25%;">About</a>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
+							</div>
 					</div>
-					<div class="carousel-item h-100">
+					<div class="carousel-item" style="height: 100%;">
 						<div class="col d-flex">
-							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/Computer_MK2.avif'), url('images/Computer_MK2.webp'), url('images/Computer_MK2.jpg'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
-								<div class="card-img-overlay">16-bit Computer</div>
+							<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
+								<div class="project_bg" style="height: 100%;">
+									<picture>
+										<source srcset="images/AoA.avif" type="image/avif">
+										<source srcset="images/AoA.webp" type="image/webp">
+										<img src="images/AoA.jpg" class="img-fluid" style="margin-top: -10%; height: 110%; object-fit: cover;">
+									</picture>
+									<div class="project_overlay">
+										<div style="margin-top: 100px; margin-left: 5%; width:90%;">
+											<h3 class="card-title">Bluetooth AoA Direction Finding</h3>
+											<h5>Ongoing</h5>
+											<p class="card-text">Designing a system for direction finding using Bluetooth AoA sensing. This looks at
+												using NRF52 microprocessors along with RF PCB design. This system could be used for camera tracking,
+												or position finding with multiple base stations. </p>
+											<p class="card-text">A prototype system has been build, but issues with the RF portion seem to prevent
+												it from working correctly.</p>
+											<a type="button" class="btn btn-dark" href="https://hackaday.io/project/174175-micro-music"
+												style="width: 25%;">About</a>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="carousel-item h-100">
-						<div class="col d-flex">
-							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/Naveris.avif'), url('images/Naveris.webp'), url('images/Naveris.png'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
-								<div class="card-img-overlay">Naveris</div>
 							</div>
-						</div>
-					</div>
-					<div class="carousel-item h-100">
-						<div class="col d-flex">
-							<div class="card border-0 rounded-0 w-100 h-100 bg-dark"
-								style="background-image: url('images/AoA.avif'), url('images/AoA.webp'), url('images/AoA.jpg'); background-position: center; background-size: auto 100%; background-repeat: no-repeat;">
-								<div class="card-img-overlay">Bluetooth AoA</div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<a class="carousel-control-prev bg-transparent w-aut" href="#projectCarousel" role="button"
-					data-bs-slide="prev">
+					data-bs-slide="prev" style="width: 50px;">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				</a>
 				<a class="carousel-control-next bg-transparent w-aut" href="#projectCarousel" role="button"
-					data-bs-slide="next">
+					data-bs-slide="next" style="width: 50px">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				</a>
 			</div>

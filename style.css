@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.project_bg,
+.project_overlay {
+	text-align: center;
+}
+
+img,
+.project_overlay {
+	transition: 0.3s all;
+	border-radius: 3px;
+}
+
+.project_bg img {
+	width: 100%;
+}
+
+.project_bg .project_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(10, 10, 10, 0.4);
+	opacity: 0;
+}
+
+.project_bg .project_overlay h2 {
+	padding-top: 20%;
+	font-family: "Droid Serif", serif;
+}
+
+.project_bg .project_overlay p {
+	font-family: "Julius Sans One", sans-serif;
+}
+
+.project_bg:hover .project_overlay {
+	opacity: 1;
+}
+
+.project_bg:hover img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
