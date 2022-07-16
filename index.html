@@ -33,54 +33,7 @@
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<style type="text/css">
-		body {
-			background-color: #222;
-			margin: 0;
-			padding: 0;
-			height: 100%;
-			font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		}
-
-		a:link,
-		a:visited {
-			color: #FFF;
-			text-decoration: none;
-		}
-
-		@media (max-width: 767px) {
-			.carousel-inner .carousel-item>div {
-				display: none;
-			}
-
-			.carousel-inner .carousel-item>div:first-child {
-				display: block;
-			}
-		}
-
-		.carousel-inner .carousel-item.active,
-		.carousel-inner .carousel-item-next,
-		.carousel-inner .carousel-item-prev {
-			display: flex;
-		}
-
-		/* medium and up screens */
-		@media (min-width: 768px) {
-
-			.carousel-inner .carousel-item-end.active,
-			.carousel-inner .carousel-item-next {
-				transform: translateX(20%);
-			}
-
-			.carousel-inner .carousel-item-start.active,
-			.carousel-inner .carousel-item-prev {
-				transform: translateX(-20%);
-			}
-		}
-
-		.carousel-inner .carousel-item-end,
-		.carousel-inner .carousel-item-start {
-			transform: translateX(0);
-		}
+		
 	</style>
 </head>
 
@@ -92,7 +45,7 @@
 					<div class="carousel-item active" style="height: 100%;">
 						<div class="col d-flex">
 							<div class="card border-0 rounded-0 w-100 h-100 bg-dark">
-								<div class="card-img">
+								<div class="card-img" style="margin-left: 5%; margin-top: 5%; width: 90%;">
 									<picture>
 										<source srcset="images/Logo.avif" type="image/avif">
 										<source srcset="images/Logo.webp" type="image/webp">
@@ -100,11 +53,14 @@
 									</picture>
 								</div>
 								<div style="margin-top: 100px; margin-left: 5%; width:90%;">
-									<h3 class="card-title">Charlie Smith</h3>
-									<p class="card-text">Working towards PhD in electronics and nano-fabrication. Spending my free time on random
+									<br class="text-light"></br>
+									<h3 class="text-light">Charlie Smith</h3>
+									<p class="text-light">Working towards PhD in electronics and nano-fabrication. Spending my free time on random
 										projects with electronics and programming.</p>
-									<a type="button" class="btn btn-dark" href="https://twitter.com/Wevel50000" style="width: 35%;">Twitter</a>
-									<a type="button" class="btn btn-dark" href="https://github.com/Wevel" style="width: 35%;">Github</a>
+									<a type="button" class="btn btn-dark" href="https://twitter.com/Wevel50000"
+										style="width: 35%; background-color: #444;">Twitter</a>
+									<a type="button" class="btn btn-dark" href="https://github.com/Wevel"
+										style="width: 35%; background-color: #444;">Github</a>
 							</div>
 							</div>
 							</div>
@@ -117,17 +73,17 @@
 										style="margin-top: -10%; height: 110%; object-fit: cover;">
 									<div class="project_overlay">
 										<div style="margin-top: 100px; margin-left: 5%; width:90%;">
-											<h3 class="card-title">Experiar SoC</h3>
-											<h5>Ongoing</h5>
-											<p class="card-text">Designing a system on a chip (SoC) for fabrication through the efabless MPW-6 free
+											<h3 class="text-light">Experiar SoC</h3>
+											<h5 class="text-light">Ongoing</h5>
+											<p class="text-light">Designing a system on a chip (SoC) for fabrication through the efabless MPW-6 free
 												shuttle using the Skywater 130nm PDK. This features dual custom designed RISC-V cores with VGA,
 												UART, SPI, and PWM peripherals. This project looks focuses on learning asic design, along with what
 												goes into designing a SoC.</p>
-											<p class="card-text">The design has been completed and was selected for fabrication, which should be
+											<p class="text-light">The design has been completed and was selected for fabrication, which should be
 												completed late 2022.
 											</p>
 											<a type="button" class="btn btn-dark" href="https://github.com/Wevel/ExperiarSoC"
-												style="width: 35%;">Github</a>
+												style="width: 35%; background-color: #444;">Github</a>
 										</div>
 									</div>
 									</div>
@@ -145,13 +101,13 @@
 											</picture>
 											<div class="project_overlay">
 												<div style="margin-top: 100px; margin-left: 5%; width:90%;">
-													<h3 class="card-title">Experiar</h3>
-													<h5>Ongoing</h5>
-													<p class="card-text">Designing and building a RISC-V cpu using CMOS logic ICs. The hardware will consist
+													<h3 class="text-light">Experiar</h3>
+													<h5 class="text-light">Ongoing</h5>
+													<p class="text-light">Designing and building a RISC-V cpu using CMOS logic ICs. The hardware will consist
 														of stacked PCB layers containing functional blocks of the cpu. This looks into
 														designing, simulating, building, and testing a cpu that follows the RISC-V instruction set
 														architecture.</p>
-													<p class="card-text">An initial system design has been completed, along with hardware design for the ALU
+													<p class="text-light">An initial system design has been completed, along with hardware design for the ALU
 														and layer emulation. However, assembly and testing of these is incomplete. </p>
 												</div>
 											</div>
@@ -171,16 +127,16 @@
 													</picture>
 													<div class="project_overlay">
 														<div style="margin-top: 100px; margin-left: 5%; width:90%;">
-															<h3 class="card-title">16-bit Computer</h3>
-															<h5>Completed</h5>
-															<p class="card-text">This project aimed at designing and building a basic 16-bit computer with a custom
+															<h3 class="text-light">16-bit Computer</h3>
+															<h5 class="text-light">Completed</h5>
+															<p class="text-light">This project aimed at designing and building a basic 16-bit computer with a custom
 																instruction set. Hardware uses TTL logic similar to the 8-bit <a href="https://eater.net/8bit">Ben
 																	Eater</a> design. Additionally, a simple compiler was created allowing programming from C like
 																code.</p>
-															<p class="card-text">While some features of this where not completed, the cpu was able to function at a
+															<p class="text-light">While some features of this where not completed, the cpu was able to function at a
 																basic level.</p>
 															<a type="button" class="btn btn-dark" href="https://hackaday.io/project/174192-simple-16-bit-computer"
-																style="width: 35%;">About</a>
+																style="width: 35%; background-color: #444;">About</a>
 														</div>
 													</div>
 												</div>
@@ -198,15 +154,15 @@
 									</picture>
 									<div class="project_overlay">
 										<div style="margin-top: 100px; margin-left: 5%; width:90%; ">
-											<h3 class="card-title">Naveris</h3>
-											<h5>Ongoing</h5>
-											<p class="card-text">Designing a self flying quadcopter. This predominantly looks at the design of the
+											<h3 class="text-light">Naveris</h3>
+											<h5 class="text-light">Ongoing</h5>
+											<p class="text-light">Designing a self flying quadcopter. This predominantly looks at the design of the
 												flight computer and flight software, as well as the use of STM32 microprocessors. Further work could
 												also include a custom motor driver, and cameras and LIDAR sensors for proximity detection.</p>
-											<p class="card-text">The flight computer has been designed and mostly build, with flight software still
+											<p class="text-light">The flight computer has been designed and mostly build, with flight software still
 												to be completed. Currently the chip shortage means that the sensors are unavailable.</p>
 											<a type="button" class="btn btn-dark" href="https://hackaday.io/project/180052-naveris"
-												style="width: 35%;">About</a>
+												style="width: 35%; background-color: #444;">About</a>
 										</div>
 									</div>
 								</div>
@@ -224,15 +180,15 @@
 									</picture>
 									<div class="project_overlay">
 										<div style="margin-top: 100px; margin-left: 5%; width:90%;">
-											<h3 class="card-title">Bluetooth AoA Direction Finding</h3>
-											<h5>Ongoing</h5>
-											<p class="card-text">Designing a system for direction finding using Bluetooth AoA sensing. This looks at
+											<h3 class="text-light">Bluetooth AoA Direction Finding</h3>
+											<h5 class="text-light">Ongoing</h5>
+											<p class="text-light">Designing a system for direction finding using Bluetooth AoA sensing. This looks at
 												using NRF52 microprocessors along with RF PCB design. This system could be used for camera tracking,
 												or position finding with multiple base stations. </p>
-											<p class="card-text">A prototype system has been build, but issues with the RF portion seem to prevent
+											<p class="text-light">A prototype system has been build, but issues with the RF portion seem to prevent
 												it from working correctly.</p>
 											<a type="button" class="btn btn-dark" href="https://hackaday.io/project/174175-micro-music"
-												style="width: 35%;">About</a>
+												style="width: 35%; background-color: #444;">About</a>
 										</div>
 									</div>
 								</div>

@@ -1,9 +1,15 @@
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
+body {
+	background-color: #222;
 	margin: 0;
 	padding: 0;
+	height: 100%;
+		font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	a:link,
+	a:visited {
+		color: #FFF;
+		text-decoration: none;
 }
 
 .project_bg,
@@ -27,7 +33,7 @@ img,
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(10, 10, 10, 0.4);
+	background-color: rgb(10, 10, 10, 0.45);
 	opacity: 0;
 }
 
@@ -47,4 +53,38 @@ img,
 .project_bg:hover img {
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
+}
+@media (max-width: 767px) {
+	.carousel-inner .carousel-item>div {
+		display: none;
+	}
+
+	.carousel-inner .carousel-item>div:first-child {
+		display: block;
+	}
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+	display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+	.carousel-inner .carousel-item-end.active,
+	.carousel-inner .carousel-item-next {
+		transform: translateX(20%);
+	}
+
+	.carousel-inner .carousel-item-start.active,
+	.carousel-inner .carousel-item-prev {
+		transform: translateX(-20%);
+	}
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+	transform: translateX(0);
 }
